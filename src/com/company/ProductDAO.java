@@ -20,7 +20,7 @@ public class ProductDAO extends AbstractDAO<Integer, Product> {
     private final static String SELECT_MAX_PRICE
             = "select * from Product where costProduct=(select MAX(costProduct) from Product)";
     private final static String SELECT_PRODUCTS_BY_BRAND
-            = "select * from Product where brand_id = (select id from Brand where brandName = ?)";
+            = "select * from Product p JOIN Brand b ON p.brand_id=b.id where b.brandName = ?";
     private final static String ALL_PRODUCTS_IN_PRICE_RANGE =
             "select * from Product where costProduct between ? and ?";
     private final static String ALL_PRODUCTS_WITH_A_BRAND = "select * from Product where brand_id is not null";
