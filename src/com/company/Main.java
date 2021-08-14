@@ -52,9 +52,9 @@ public class Main {
             }*/
 
             // find products with a brand
-            /*for (var item : productDao.findProductsWithABrand()) {
+            for (var item : productDao.findProductsWithABrand()) {
                 System.out.println(item);
-            }*/
+            }
         }
     }
 }
