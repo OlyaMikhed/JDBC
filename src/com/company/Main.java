@@ -42,9 +42,9 @@ public class Main {
             //System.out.println(productDao.findMaxPrice());
 
             //find products by brand
-            for (var item : productDao.findProductsByBrand("Apple")) {
+            /*for (var item : productDao.findProductsByBrand("Apple")) {
                 System.out.println(item);
-            }
+            }*/
 
             // find products in the price range
             /*for (var item : productDao.getAllProductsInPriceRange(1000.00, 2500.00)) {
